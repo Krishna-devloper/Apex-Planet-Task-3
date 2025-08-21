@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#quiz">Quiz</a></li>
+            <li><a href="#joke">Joke</a></li>
+            <li><a href="#carousel">Carousel</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Advanced Interactive Webpage</h1>
+        <p>Responsive • Animated • Interactive</p>
+    </header>
+
+
+    <section id="quiz" class="fade-in">
+        <h2>Interactive Quiz</h2>
+        <div id="quiz-box"></div>
+        <button onclick="nextQuestion()">Next</button>
+        <p id="result"></p>
+    </section>
+
+    <section id="joke" class="fade-in">
+        <h2>Random Joke Generator</h2>
+        <button onclick="getJoke()">Get Joke</button>
+        <p id="joke-text"></p>
+    </section>
+
+    <section id="carousel" class="fade-in">
+        <h2>Image Carousel</h2>
+        <img id="carousel-img" src="https://picsum.photos/id/237/400/250" alt="carousel">
+        <br>
+        <button onclick="prev()">Prev</button>
+        <button onclick="next()">Next</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
